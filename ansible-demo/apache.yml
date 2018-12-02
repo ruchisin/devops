@@ -1,0 +1,11 @@
+---
+- hosts: all
+  user: root
+  become: true
+
+  tasks:
+    - name: install web servers
+      yum: pkg=httpd state=installed
+
+
+
